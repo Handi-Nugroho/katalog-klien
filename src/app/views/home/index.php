@@ -1,11 +1,11 @@
 <main>
     <div class="container">
 
-        <div class="row mt-3">
+    <div class="row mt-3">
             <?php Flasher::flash(); ?>
         </div>
 
-        <h1>HALAMAN HOMEEEEEEEE</h1>
+    <h1>HALAMAN HOMEEEEEEEE</h1>
         <p>Buat front end nya di sini (src/app/views/home/index.php)</p>
         <p>Utk hlm login, ada di http://localhost/katalog-klien/public/login</p>
         <p>Utk nulis css, js, dan gambar, ada di /katalog-klien/public/</p>
@@ -18,9 +18,9 @@
             <?php Flasher::flash(); ?>
             </div>
         </div>
-
+        
         <div class="row mb-2">
-            <h2 class="col">Data Klien</h2>
+        <h2 class="col">Data Klien</h2>
             <div class="container col d-flex justify-content-end">
                 <button
                     id="btnTambahDataKlien"
@@ -35,10 +35,16 @@
         <?php require_once "clients_table.php"; ?>
 
         <br>
+            
+        </div>
 
-    </div>
-
-    <div class="modal fade" id="modalDataKlien" tabindex="-1"
+        <div class="row mb-2">
+            <form action="<?= BASEURL; ?>/" method="post">
+            <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Cari Data Klien" name="keyword" id="keyword" autocomplete="off">
+            <button class="btn btn-primary" type="submit" id="tombolCari">Cari</button>
+        </div>
+        <div class="modal fade" id="modalDataKlien" tabindex="-1"
         aria-labelledby="judulModal"
         aria-hidden="true">
 
@@ -53,9 +59,9 @@
                     class="btn-close"
                     data-bs-dismiss="modal"
                     aria-label="Close"></button>
-                </div>
+        </div>
 
-                <form action="<?= BASEURL ?>/clients/tambah"
+        <form action="<?= BASEURL ?>/clients/tambah"
                     method="post"
                     id="form_data_klien">
 
