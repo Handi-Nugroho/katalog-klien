@@ -1,26 +1,20 @@
-<main>
-    <div class="container">
+<main class="container">
+    <div class="col py-3">
 
     <div class="row mt-3">
             <?php Flasher::flash(); ?>
         </div>
 
-    <h1>HALAMAN HOMEEEEEEEE</h1>
-        <p>Buat front end nya di sini (src/app/views/home/index.php)</p>
-        <p>Utk hlm login, ada di http://localhost/katalog-klien/public/login</p>
-        <p>Utk nulis css, js, dan gambar, ada di /katalog-klien/public/</p>
-
+    <h1>Katalog Klien</h1>
         <hr>
-        <br>
-
         <div class="row mb-2">
-            <div class="col">
+            <div class="col py-3">
             <?php Flasher::flash(); ?>
             </div>
         </div>
         
         <div class="row mb-2">
-        <h2 class="col">Data Klien</h2>
+        <h2 class="col py-3">Data Klien</h2>
             <div class="container col d-flex justify-content-end">
                 <button
                     id="btnTambahDataKlien"
@@ -36,13 +30,6 @@
 
         <br>
             
-        </div>
-
-        <div class="row mb-2">
-            <form action="<?= BASEURL; ?>/" method="post">
-            <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Cari Data Klien" name="keyword" id="keyword" autocomplete="off">
-            <button class="btn btn-primary" type="submit" id="tombolCari">Cari</button>
         </div>
         <div class="modal fade" id="modalDataKlien" tabindex="-1"
         aria-labelledby="judulModal"
@@ -238,5 +225,7 @@
             </div>
         </div>
     </div>
-
 </main>
+                </div>
+            </div>
+        </div>
